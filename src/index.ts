@@ -10,6 +10,7 @@ AppDataSource.initialize()
     .then(res => {
         console.log("Conexión a la base de datos realizada con éxito");
         app.listen(PORT, () => {
-            console.log(`listening on port ${PORT}`)
+            console.log(`servidor escuchando en el puerto ${PORT}`);
+            console.log(`Documentación disponible en http://localhost:${PORT}/api-docs`);
         });
     })
