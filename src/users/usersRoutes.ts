@@ -9,7 +9,7 @@ const usersRouter = Router();
  * /users:
  *   get:
  *     summary: Obtiene una lista de usuarios
- *     tags: [Users]
+ *     tags: [users]
  *     responses:
  *       200:
  *         description: Lista de usuarios obtenida con éxito
