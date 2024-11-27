@@ -15,7 +15,7 @@ const swaggerOptions: swaggerJsDoc.Options = {
       },
     ],
   },
-  apis: ['./src/indexRoutes.ts'], // Rutas donde defines los endpoints !!!!!!!!
+  apis: ['./src/indexRoutes.ts', './src/users/usersRoutes.ts'], // Rutas donde defines los endpoints !!!!!!!!
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
