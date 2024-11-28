@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm"
+import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm"
+import { Credential } from "./Credential"
 
 
 @Entity({
@@ -39,5 +40,9 @@ export class User {
 
     @Column()
     country: string
+
+    @OneToOne(() => Credential, credential => credential.user, { cascade: true })
+    @JoinColumn()
+    credential: Credential
 
 }
